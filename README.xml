@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <title>Bot Verification Page 🌐</title>
+    <description>
+        This project is a Bot Verification Page with a Cloudflare-style theme and confirmation GIF built using HTML5, Tailwind CSS, and JavaScript.
+        It can be used on websites or projects to verify that users are not bots.
+    </description>
+
+    <features>
+        <feature>Orange Cloudflare theme with animated clouds</feature>
+        <feature>Cloudflare logo (cloudflare.svg) included</feature>
+        <feature>Bot verification form with checkbox and shake animation</feature>
+        <feature>Confirmation GIF (badge.gif) displayed in a modal</feature>
+        <feature>Fully responsive and mobile-friendly</feature>
+        <feature>Font: SF Pro / Roboto</feature>
+        <feature>Footer with text: Beta By F2</feature>
+        <feature>Modular structure with separate files: index.html, style.css, script.js</feature>
+    </features>
+
+    <installation>
+        <step>Download all project files: index.html, style.css, script.js, badge.gif, cloudflare.svg</step>
+        <step>Place them in a single directory, e.g.:
+            <directory>myproject/
+                <file>index.html</file>
+                <file>style.css</file>
+                <file>script.js</file>
+                <file>badge.gif</file>
+                <file>cloudflare.svg</file>
+            </directory>
+        </step>
+        <step>Open index.html in your browser</step>
+    </installation>
+
+    <customization>
+        <option>Replace cloudflare.svg with your own logo</option>
+        <option>Replace badge.gif with your preferred GIF</option>
+        <option>Edit style.css or Tailwind classes to customize colors and styles</option>
+    </customization>
+
+    <files>
+        <file>
+            <name>index.html</name>
+            <description>Main HTML structure of the page</description>
+        </file>
+        <file>
+            <name>style.css</name>
+            <description>All styles and animations</description>
+        </file>
+        <file>
+            <name>script.js</name>
+            <description>JavaScript logic for form and modal</description>
+        </file>
+        <file>
+            <name>badge.gif</name>
+            <description>Confirmation GIF displayed after verification</description>
+        </file>
+        <file>
+            <name>cloudflare.svg</name>
+            <description>Cloudflare logo</description>
+        </file>
+    </files>
+
+    <notes>
+        <note>On Termux or Android, enable storage access first with: termux-setup-storage</note>
+        <note>Ensure all files are placed in the correct directory</note>
+    </notes>
+
+    <license>
+        This project is free to use and modify for personal or commercial purposes.
+    </license>
+
+    <author>Made with 💙 by F2</author>
+</project>
