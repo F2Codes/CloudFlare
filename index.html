@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Verification</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-500 flex justify-center items-center h-screen font-roboto text-white relative overflow-hidden">
+
+  <!-- Clouds background -->
+  <div class="clouds"></div>
+
+  <div class="bg-black p-8 rounded-lg shadow-lg max-w-md w-full">
+    <!-- Cloudflare Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="cloudflare.svg" alt="Cloudflare Logo" class="cloudflare-logo"/>
+    </div>
+    
+    <h2 class="text-3xl font-semibold text-center mb-6">Please Confirm You're Not a Robot</h2>
+    
+    <form id="verification-form" action="#" method="POST" class="space-y-6">
+      <!-- Checkbox for bot verification -->
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="bot-verification" name="bot-verification" required class="shake-checkbox rounded border-gray-300 text-orange-500 focus:ring-2 focus:ring-orange-500">
+        <label for="bot-verification" class="text-sm text-gray-300">I am not a robot</label>
+      </div>
+
+      <div class="mt-4">
+        <button type="submit" id="submit-btn" class="w-full py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 button-animate" disabled>Confirm</button>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class="absolute bottom-0 left-0 right-0 text-center py-4 text-sm text-gray-300 bg-black">
+      Beta By F2
+    </footer>
+  </div>
+
+  <!-- Modal for Confirmation -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <!-- GIF -->
+      <div class="icon-check"></div>
+      <div class="message">
+        <h3 class="text-xl font-semibold mb-4">Thank you for verifying!</h3>
+        <p>Your submission was successful.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Font SF Pro if available */
+body {
+  font-family: 'SF Pro', sans-serif;
+}
+
+/* Clouds background */
+@keyframes moveClouds {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.clouds {
+  background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
+  background-repeat: repeat-x;
+  animation: moveClouds 30s linear infinite;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100%;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+/* Checkbox shake animation */
+@keyframes shakeTick {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shake-checkbox:checked {
+  animation: shakeTick 0.6s ease-in-out;
+}
+
+/* Cloudflare logo */
+.cloudflare-logo {
+  max-width: 150px;
+  transition: transform 0.2s ease-in-out;
+}
+.cloudflare-logo:hover {
+  transform: rotate(360deg);
+}
+
+/* Button focus */
+.button-animate:focus {
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.modal-content {
+  background-color: #1a202c;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* GIF in modal */
+.modal .icon-check {
+  width: 80px;
+  height: 80px;
+  background-image: url('badge.gif');
+  background-size: cover;
+  margin-top: 20px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.modal .message {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
