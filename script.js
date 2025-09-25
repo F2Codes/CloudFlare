@@ -26,3 +26,25 @@ document.getElementById('verification-form').addEventListener('submit', function
     }, 5000);
   }
 });
+document.getElementById("verifyBtn").addEventListener("click", async () => {
+  const token = document.querySelector("[name='cf-turnstile-response']").value;
+
+  if (!token) {
+    document.getElementById("result").textContent = "⚠️ Please complete the challenge.";
+    return;
+  }
+
+  const res = await fetch("/api/check", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ token }),
+  });
+
+  const data = await res.json();
+
+  if (data.success) {
+    document.getElementById("result").textContent = "✅ Verified as Human!";
+  } else {
+    document.getElementById("result").textContent = "❌ Verification Failed!";
+  }
+});

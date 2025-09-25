@@ -6,6 +6,7 @@
   <title>Bot Verification</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-orange-500 flex justify-center items-center h-screen font-roboto text-white relative overflow-hidden">
@@ -19,6 +20,22 @@
       <img src="cloudflare.svg" alt="Cloudflare Logo" class="cloudflare-logo"/>
     </div>
     
+  <div class="container">
+  <!-- لوگو کلودفلر -->
+  <img src="cloudflare.svg" class="mx-auto mb-4 w-20" alt="Cloudflare" />
+
+  <!-- چالش کلودفلر -->
+  <div class="cf-challenge mb-4" data-sitekey="your_cloudflare_site_key"></div>
+
+  <!-- دکمه تایید -->
+  <button id="verifyBtn" class="bg-orange-500 text-white px-6 py-2 rounded-lg">
+    Verify ✅
+  </button>
+
+  <!-- نتیجه -->
+  <p id="result" class="mt-4 text-sm"></p>
+</div>
+
     <h2 class="text-3xl font-semibold text-center mb-6">Please Confirm You're Not a Robot</h2>
     
     <form id="verification-form" action="#" method="POST" class="space-y-6">

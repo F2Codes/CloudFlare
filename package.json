@@ -1,0 +1,28 @@
+{
+  "name": "cloudflare",
+  "version": "1.0.0",
+  "description": "This project is a **Bot Verification Page** with a **Cloudflare-style theme** and **confirmation GIF** built using **HTML5**, **Tailwind CSS**, and **JavaScript**.   It can be used on websites or projects to verify that users are **not bots**.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F2Codes/CloudFlare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/F2Codes/CloudFlare/issues"
+  },
+  "homepage": "https://github.com/F2Codes/CloudFlare#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
